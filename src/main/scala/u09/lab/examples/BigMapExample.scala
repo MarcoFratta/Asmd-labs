@@ -16,7 +16,7 @@ object BigMapExample extends App:
 
   val roomSize= 5
   val borderSize = 1
-  val nRooms = 7
+  val nRooms = 6
   val w = roomSize *nRooms + borderSize * (nRooms - 1)
   val h = w
   val itemOffset = (roomSize - 1, roomSize - 1)
@@ -57,7 +57,7 @@ object BigMapExample extends App:
   @main
   def showBigMapLearning():Unit =
     val hist = model.makeLearningInstance().learningHist(q0)(10000, 750)
-    createGui(model, 15)(borderGrid
+    createGui(model, 20)(borderGrid
       //.showStartPos((0,0))
       .showJumps(model.jumps, model.qFunction.actions)
       .showItems(model.items.values.toSet, model.releasePos)

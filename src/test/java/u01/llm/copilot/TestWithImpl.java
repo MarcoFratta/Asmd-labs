@@ -1,8 +1,8 @@
 package u01.llm.copilot;
 
-import exam.Logger;
-import exam.LogicImpl;
-import exam.Position;
+import u01.exam.Logger;
+import u01.exam.LogicImpl;
+import u01.exam.Position;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

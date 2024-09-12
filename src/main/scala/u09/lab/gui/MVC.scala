@@ -20,7 +20,7 @@ object MVC:
   private def loop[S <: Pos2d[S]](cond: State[(ModelState[S], Window), Boolean]): State[(ModelState[S], Window), Unit] = {
     cond flatMap { bool =>
       if (bool)
-        Thread.sleep(20)
+        Thread.sleep(28)
         //println("looping")
         loop(cond)
       else State.empty

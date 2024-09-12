@@ -50,7 +50,7 @@ object CorridorGui:
     val q1 = model.makeLearningInstance().learn(10000, 700, q0)
     val hist = model.makeLearningInstance().nRuns(q1)(100, 100)(() =>
       randomInitial(model.obstacles, w, h))
-    createGui(model, 50)(borderGrid
+    createGui(model, 50)(noBorderGrid
       .showJumps(model.jumps, model.qFunction.actions)
       .showObstacles(model.obstacles))(hist)
 

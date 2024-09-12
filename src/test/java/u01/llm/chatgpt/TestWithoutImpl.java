@@ -1,11 +1,11 @@
 package u01.llm.chatgpt;
 
-import exam.LoggerImpl;
-import exam.LogicImpl;
-import exam.Position;
+import u01.exam.LoggerImpl;
+import u01.exam.LogicImpl;
+import u01.exam.Position;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import exam.Logic;
+import u01.exam.Logic;
 import static org.junit.jupiter.api.Assertions.*;
 
 class TestWithoutImpl {
