@@ -75,6 +75,7 @@ trait QRLImpl extends QRL:
               val newQ = updateQ(s, tmpQ)
               tmpQ = newQ._2
               Some(newQ, (newQ._1, i + 1))))
+      
     def nRuns(q: Q)(episodes: Int, length: Int)(g: () => State): LazyList[LazyList[(State, Q)]] =
       LazyList.iterate(0)(_ + 1).take(episodes).map(_ =>
         val initial = g()

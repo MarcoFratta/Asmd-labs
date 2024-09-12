@@ -10,6 +10,7 @@ object BasicMatrix:
     override def toString = Map(LEFT -> "<", RIGHT -> ">",
       UP -> "^", DOWN -> "v")(this)
 
+  // the state 
   case class Pos(override val x: Int, override val y: Int) extends Pos2d[Pos]:
     override def toString = s"($x,$y)"
     override def of(p: (Int, Int)): Pos = Pos(p._1, p._2)
