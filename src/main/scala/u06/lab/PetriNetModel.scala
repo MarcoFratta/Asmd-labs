@@ -28,7 +28,6 @@ object PetriNetModel:
 
   type Box = Iterable[Token[?]]
   type Marking[I,T] = Map[I, Box]
-  type Cond = Token[?]
   type Arc = PartialFunction[Box, Box]
 
   def box():Box = List()
