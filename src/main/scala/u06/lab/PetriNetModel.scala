@@ -17,6 +17,7 @@ object PetriNetModel:
     def getValue: Option[T] = t match
       case Value(content: T, _) => Some[T](content)
       case _ => Option.empty[T]
+      
   extension (t: Token[?])
     def getName: String = t match
       case Value(_, n) => n
